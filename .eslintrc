@@ -12,8 +12,9 @@
     "sourceType": "module",
     "ecmaFeatures": {
       "jsx": true,
-      "modules": true
-    }
+      "modules": true,
+      "experimentalObjectRestSpread": true
+    },
   },
   "env": {
     "es6": true,

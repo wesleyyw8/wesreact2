@@ -12,4 +12,4 @@ export default function configureStore(initialState) {
       window.devToolsExtension ? window.devToolsExtension() : f => f
     )
   );
-};
+}

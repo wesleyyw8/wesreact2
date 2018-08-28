@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
 import { routerReducer } from 'react-router-redux';
-import availability from './availability-reducer/availabilityReducer';
+import groups from './groups-reducer/groupsReducer';
 
 const rootReducer = combineReducers({
-  availability,
+  groups,
   routing: routerReducer
 });
 

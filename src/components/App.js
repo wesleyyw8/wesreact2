@@ -1,14 +1,14 @@
 import React, {PropTypes} from 'react';
-import {connect} from 'react-redux';
+// import {connect} from 'react-redux';
 
 class App extends React.Component {
   render() {
     return (
       <div className="container-fluid">
-        asdasdasdasdasd
+        asdasdasd
       </div>
     );
   }
 }
 
-export default connect()(App);
+export default App;

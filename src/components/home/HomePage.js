@@ -1,25 +1,17 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import Group from '../group/Group';
+import { mapStateToProps } from './connectors';
 
 class HomePage extends React.Component {
-  componentDidMount() {
-    this.props.groups = [];
-  }
   render() {
-    console.log(this.props);
+    const { groups } = this.props;
     return (
-      <div className="jumbotron">
-        <h1>Administration</h1>
-        {this.props.groups.map(group => <span></span>)}        
+      <div className="container">
+        {groups.map((group, index) => <Group key={index} groupName={group.groupName} tours={group.tours} />)}
       </div>
     );
   }
 }
-
-const mapStateToProps = state => {
-  return {
-    groups: state.groups
-  };
-}
+  
 export default connect(mapStateToProps, null)(HomePage);

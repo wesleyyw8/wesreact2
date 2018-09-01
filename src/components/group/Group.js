@@ -2,10 +2,13 @@ import React from 'react';
 import Tour from '../tour/Tour';
 class Group extends React.Component {
   render() {
+    const { tours, groupName } = this.props;
     return (
-      <div className="group">
-        <h2>group</h2>
-        <Tour/>
+      <div>
+        <h2>{groupName}</h2>
+        <div className="row">
+          { tours.map((tour, index) => <Tour key={index} tour={tour} />)}
+        </div>
       </div>
     );
   }

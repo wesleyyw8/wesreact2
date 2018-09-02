@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {PropTypes} from 'react';
 import {connect} from 'react-redux';
 import Group from '../group/Group';
 import { mapStateToProps } from './connectors';
@@ -13,5 +13,9 @@ class HomePage extends React.Component {
     );
   }
 }
-  
+
+HomePage.propTypes = {
+  groups: PropTypes.array.isRequired
+};
+
 export default connect(mapStateToProps, null)(HomePage);

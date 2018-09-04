@@ -17,7 +17,6 @@ class Tour extends React.Component {
       }
       this.setState({timer: Object.assign({}, timer)});
     }, 1000);
-
   }
   formatTime(time) {
       const timerFormated = {
@@ -30,7 +29,16 @@ class Tour extends React.Component {
   }
   render() {
     const { tourName, seatsLeft, isAvailable } = this.props.tour;
+    const { onBookingNowClick } = this.props;
     const timer = this.formatTime(this.state.timer);
+    const onBookingButton = 
+      <button 
+        onClick={onBookingNowClick} 
+        disabled={!isAvailable}
+        className={'btn btn-primary'} >
+          Book now!
+      </button>
+
     return (
       <div className="tour col-sm-3">
         <div className="card">
@@ -41,7 +49,7 @@ class Tour extends React.Component {
           <div className="card-body">
             <h4 className="card-title">{tourName}</h4>
             <p className="card-text">Seats left: {seatsLeft}</p>
-            <a href="#" className="btn btn-primary">Book!</a>
+            {onBookingButton}
           </div>
         </div>
       </div>

@@ -25,7 +25,7 @@ export default {
   ],
   resolve: {
     alias: {
-      'Actions': path.resolve(__dirname, 'src/actions/actionTypes'),
+      'Actions': path.resolve(__dirname, 'src/actions'),
       'Selectors': path.resolve(__dirname, 'src/selectors/index')
     }
   },

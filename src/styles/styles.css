@@ -4,3 +4,8 @@
   max-width: 90vw;
   margin: 10px auto;
 }
+
+#app .btn-primary:disabled {
+  background-color: grey;
+  border-color: grey;
+}

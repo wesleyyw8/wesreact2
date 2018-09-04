@@ -12,7 +12,7 @@ const availability = {
         minutes: 20,
         seconds: 12
       },
-      isAvailable: true
+      isAvailable: false
     }, {
       tourName: 'Tour Name 2',
       seatsLeft: 4,

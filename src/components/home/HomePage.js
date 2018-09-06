@@ -9,8 +9,8 @@ class HomePage extends React.Component {
     this.onBookingNowClick = this.onBookingNowClick.bind(this);
 
   }
-  onBookingNowClick(event) {
-    console.log('qweqweqwe');
+  onBookingNowClick() {
+    this.props.bookTourAction();
   }
   render() {
     const { groups } = this.props;
@@ -28,7 +28,8 @@ class HomePage extends React.Component {
 }
 
 HomePage.propTypes = {
-  groups: PropTypes.array.isRequired
+  groups: PropTypes.array.isRequired,
+  bookTourAction: PropTypes.func.isRequired
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(HomePage);

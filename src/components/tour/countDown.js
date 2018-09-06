@@ -24,6 +24,6 @@ const countDown = timer => {
     seconds,
     days
   };
-}
+};
 
 export default countDown;

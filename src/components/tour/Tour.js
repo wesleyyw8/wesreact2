@@ -17,6 +17,7 @@ class Tour extends React.Component {
       }
       this.setState({timer: Object.assign({}, timer)});
     }, 1000);
+    console.log('asdasd',this.props);
   }
   formatTime(time) {
       const timerFormated = {
@@ -32,12 +33,12 @@ class Tour extends React.Component {
     const { onBookingNowClick } = this.props;
     const timer = this.formatTime(this.state.timer);
     const onBookingButton = 
-      <button 
+      (<button 
         onClick={onBookingNowClick} 
         disabled={!isAvailable}
         className={'btn btn-primary'} >
           Book now!
-      </button>
+      </button>);
 
     return (
       <div className="tour col-sm-3">
@@ -58,7 +59,8 @@ class Tour extends React.Component {
 }
 
 Tour.propTypes = {
-  tour: PropTypes.object.isRequired
+  tour: PropTypes.object.isRequired,
+  onBookingNowClick: PropTypes.func.isRequired
 };
 
 export default Tour;

@@ -20,6 +20,7 @@ class Group extends React.Component {
 }
 Group.propTypes = {
   tours: PropTypes.array.isRequired,
-  groupName: PropTypes.string.isRequired
+  groupName: PropTypes.string.isRequired,
+  onBookingNowClick: PropTypes.func.isRequired
 };
 export default Group;

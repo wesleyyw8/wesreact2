@@ -17,7 +17,7 @@ class Tour extends React.Component {
       }
       this.setState({timer: Object.assign({}, timer)});
     }, 1000);
-    console.log('asdasd',this.props);
+
   }
   formatTime(time) {
       const timerFormated = {
@@ -30,11 +30,12 @@ class Tour extends React.Component {
   }
   render() {
     const { tourName, seatsLeft, isAvailable } = this.props.tour;
+    const { groupIndex, tourIndex } = this.props;
     const { onBookingNowClick } = this.props;
     const timer = this.formatTime(this.state.timer);
     const onBookingButton = 
       (<button 
-        onClick={onBookingNowClick} 
+        onClick={() => onBookingNowClick(groupIndex, tourIndex)}
         disabled={!isAvailable}
         className={'btn btn-primary'} >
           Book now!

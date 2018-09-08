@@ -3,7 +3,8 @@ import Tour from '../tour/Tour';
 
 class Group extends React.Component {
   render() {
-    const { tours, groupName, onBookingNowClick } = this.props;
+    const { tours, groupName, onBookingNowClick, groupIndex } = this.props;
+    
     return (
       <div>
         <h2>{groupName}</h2>
@@ -12,6 +13,8 @@ class Group extends React.Component {
             <Tour 
               key={index} 
               tour={tour}
+              tourIndex={index}
+              groupIndex={groupIndex}
               onBookingNowClick={onBookingNowClick} />)}
         </div>
       </div>

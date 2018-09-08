@@ -9,8 +9,8 @@ class HomePage extends React.Component {
     this.onBookingNowClick = this.onBookingNowClick.bind(this);
 
   }
-  onBookingNowClick() {
-    this.props.bookTourAction();
+  onBookingNowClick(groupIndex, tourIndex) {
+    this.props.bookTourAction(groupIndex, tourIndex);
   }
   render() {
     const { groups } = this.props;
@@ -21,6 +21,7 @@ class HomePage extends React.Component {
             key={index} 
             groupName={group.groupName} 
             tours={group.tours} 
+            groupIndex={index}
             onBookingNowClick={this.onBookingNowClick} />)}
       </div>
     );

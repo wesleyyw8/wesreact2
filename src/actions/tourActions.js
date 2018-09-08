@@ -1,8 +1,10 @@
-import { EDIT_SEATS_LEFT } from './actionTypes';
+import { REDUCE_SEATS_LEFT } from './actionTypes';
 
-export const bookTourAction = () => {
+export const bookTourAction = (groupIndex, tourIndex) => {
   return {
-    type: 'EDIT_SEATS_LEFT', 
-    data: {}
+    type: REDUCE_SEATS_LEFT, 
+    data: {
+      tourIndex, groupIndex
+    }
   };
 };

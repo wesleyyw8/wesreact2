@@ -61,7 +61,9 @@ class Tour extends React.Component {
 
 Tour.propTypes = {
   tour: PropTypes.object.isRequired,
-  onBookingNowClick: PropTypes.func.isRequired
+  onBookingNowClick: PropTypes.func.isRequired,
+  groupIndex: PropTypes.number.isRequired,
+  tourIndex: PropTypes.number.isRequired
 };
 
 export default Tour;

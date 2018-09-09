@@ -8,6 +8,6 @@ const toursReducer = (state = [], action = {}) => {
     default: 
       return state;
   }
-}
+};
 
 export default toursReducer;

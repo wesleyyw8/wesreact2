@@ -5,6 +5,7 @@ module.exports = {
     'src/reducers/**',
     '!src/reducers/index.js'
   ],
+  "rootDir": "../",
   testMatch: ['<rootDir>/../**/__tests__/*.js'],
   moduleNameMapper: {
     '^Actions[/](.+)': '<rootDir>/src/actions/$1',

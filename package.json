@@ -15,7 +15,7 @@
     "build": "babel-node tools/build.js",
     "postbuild": "babel-node tools/distServer.js",
     "testCoverage": "jest --no-cache --coverage --config jest.config.js",
-    "test": "jest --config jest.config.js",
+    "test": "jest --config tools/jest.config.js",
     "test:watch": "npm run test -- --watch"
   },
   "author": "Cory House",

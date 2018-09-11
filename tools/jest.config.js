@@ -1,7 +1,6 @@
 module.exports = {
   verbose: true,
   'collectCoverageFrom': [
-    'src/actions/**',
     'src/reducers/**',
     '!src/reducers/index.js'
   ],

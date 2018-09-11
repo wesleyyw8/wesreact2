@@ -13,4 +13,7 @@ describe('tours reducer', () => {
       seatsLeft: 3
     });
   });
+  it('calls the tourReducer with no args', () => {
+    expect(tourReducer()).toEqual([]);
+  });
 });

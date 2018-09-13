@@ -35,7 +35,7 @@ class Tour extends React.Component {
     const timer = this.formatTime(this.state.timer);
     const onBookingButton = 
       (<button 
-        onClick={() => onBookingNowClick(groupIndex, tourIndex)}
+        onClick={() => onBookingNowClick(groupIndex, tourIndex, seatsLeft)}
         disabled={!isAvailable}
         className={'btn btn-primary'} >
           Book now!

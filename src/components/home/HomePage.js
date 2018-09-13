@@ -9,8 +9,11 @@ class HomePage extends React.Component {
     this.onBookingNowClick = this.onBookingNowClick.bind(this);
 
   }
-  onBookingNowClick(groupIndex, tourIndex) {
+  onBookingNowClick(groupIndex, tourIndex, seatsLeft) {
     this.props.bookTourAction(groupIndex, tourIndex);
+    if (seatsLeft === 1) {
+      this.props.disableTourAction(groupIndex, tourIndex);
+    }
   }
   render() {
     const { groups } = this.props;

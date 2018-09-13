@@ -1,40 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1536702117780" clover="3.2.0">
-  <project timestamp="1536702117780" name="All files">
-    <metrics statements="17" coveredstatements="17" conditionals="13" coveredconditionals="13" methods="3" coveredmethods="3" elements="33" coveredelements="33" complexity="0" loc="17" ncloc="17" packages="3" files="3" classes="3">
+<coverage generated="1536870426737" clover="3.2.0">
+  <project timestamp="1536870426737" name="All files">
+    <metrics statements="23" coveredstatements="23" conditionals="16" coveredconditionals="16" methods="3" coveredmethods="3" elements="42" coveredelements="42" complexity="0" loc="23" ncloc="23" packages="3" files="3" classes="3">
       <package name="groups-reducer">
-        <metrics statements="8" coveredstatements="8" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1"/>
+        <metrics statements="11" coveredstatements="11" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
         <file name="groupsReducer.js" path="/Users/wesleyrebelo/sites/wesreact2/src/reducers/groups-reducer/groupsReducer.js">
-          <metrics statements="8" coveredstatements="8" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1"/>
+          <metrics statements="11" coveredstatements="11" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
           <line num="5" count="1" type="cond" truecount="2" falsecount="0"/>
-          <line num="6" count="3" type="cond" truecount="3" falsecount="0"/>
-          <line num="8" count="1" type="stmt"/>
-          <line num="9" count="1" type="stmt"/>
-          <line num="13" count="1" type="stmt"/>
-          <line num="14" count="1" type="stmt"/>
+          <line num="8" count="4" type="cond" truecount="4" falsecount="0"/>
+          <line num="10" count="1" type="stmt"/>
+          <line num="11" count="1" type="stmt"/>
           <line num="15" count="1" type="stmt"/>
-          <line num="21" count="1" type="stmt"/>
+          <line num="16" count="1" type="stmt"/>
+          <line num="17" count="1" type="stmt"/>
+          <line num="23" count="1" type="stmt"/>
+          <line num="24" count="1" type="stmt"/>
+          <line num="25" count="1" type="stmt"/>
+          <line num="31" count="1" type="stmt"/>
         </file>
       </package>
       <package name="groups-reducer.group-reducer">
-        <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <metrics statements="7" coveredstatements="7" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1"/>
         <file name="groupReducer.js" path="/Users/wesleyrebelo/sites/wesreact2/src/reducers/groups-reducer/group-reducer/groupReducer.js">
-          <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+          <metrics statements="7" coveredstatements="7" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1"/>
           <line num="5" count="2" type="cond" truecount="2" falsecount="0"/>
-          <line num="6" count="3" type="cond" truecount="2" falsecount="0"/>
-          <line num="8" count="2" type="stmt"/>
+          <line num="7" count="5" type="cond" truecount="3" falsecount="0"/>
           <line num="9" count="2" type="stmt"/>
-          <line num="15" count="1" type="stmt"/>
+          <line num="10" count="2" type="stmt"/>
+          <line num="16" count="2" type="stmt"/>
+          <line num="17" count="2" type="stmt"/>
+          <line num="23" count="1" type="stmt"/>
         </file>
       </package>
       <package name="groups-reducer.group-reducer.tour-reducer">
-        <metrics statements="4" coveredstatements="4" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <metrics statements="5" coveredstatements="5" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1"/>
         <file name="tourReducer.js" path="/Users/wesleyrebelo/sites/wesreact2/src/reducers/groups-reducer/group-reducer/tour-reducer/tourReducer.js">
-          <metrics statements="4" coveredstatements="4" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+          <metrics statements="5" coveredstatements="5" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1"/>
           <line num="4" count="3" type="cond" truecount="2" falsecount="0"/>
-          <line num="5" count="4" type="cond" truecount="2" falsecount="0"/>
+          <line num="5" count="7" type="cond" truecount="3" falsecount="0"/>
           <line num="7" count="3" type="stmt"/>
-          <line num="9" count="1" type="stmt"/>
+          <line num="9" count="3" type="stmt"/>
+          <line num="11" count="1" type="stmt"/>
         </file>
       </package>
     </metrics>

@@ -9,10 +9,11 @@ class Tour extends React.Component {
     };
   }
   componentDidMount() {
+    const { groupIndex, tourIndex } = this.props;
     const x = setInterval(() => {
       let timer = countDown(this.state.timer);
       if (timer.days === 0 && timer.hours === 0 && timer.minutes === 0 && timer.seconds === 0) {
-        //this.props.buildEditIsAvailableAction(this.props.groupIndex, this.props.tourIndex, false);
+        this.props.onCountDownFinished(groupIndex, tourIndex);
         clearInterval(x);
       }
       this.setState({timer: Object.assign({}, timer)});
@@ -63,7 +64,8 @@ Tour.propTypes = {
   tour: PropTypes.object.isRequired,
   onBookingNowClick: PropTypes.func.isRequired,
   groupIndex: PropTypes.number.isRequired,
-  tourIndex: PropTypes.number.isRequired
+  tourIndex: PropTypes.number.isRequired,
+  onCountDownFinished: PropTypes.func.isRequired
 };
 
 export default Tour;

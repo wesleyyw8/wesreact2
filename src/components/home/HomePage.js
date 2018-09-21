@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 import Group from '../group/Group';
 import { mapStateToProps, mapDispatchToProps } from './connectors';
 
-class HomePage extends React.Component {
+export class HomePage extends React.Component {
   constructor(props, context) {
     super(props, context);
     this.onBookingNowClick = this.onBookingNowClick.bind(this);

@@ -6,32 +6,17 @@ const availability = {
     tours: [{
       tourName: 'Tour Name 1',
       seatsLeft: 5,
-      timer: {
-        days: 182,
-        hours: 15,
-        minutes: 20,
-        seconds: 12
-      },
+      timer: new Date(2019, 2, 23),
       isAvailable: true
     }, {
       tourName: 'Tour Name 2',
       seatsLeft: 4,
-      timer: {
-        days: 181,
-        hours: 15,
-        minutes: 20,
-        seconds: 0
-      },
+      timer: new Date(2019, 10, 12),
       isAvailable: true
     }, {
       tourName: 'Tour Name 3',
       seatsLeft: 11,
-      timer: {
-        days: 0,
-        hours: 0,
-        minutes: 0,
-        seconds: 10
-      },
+      timer: new Date(2018, 10, 12),
       isAvailable: true
     }]
   },{
@@ -39,32 +24,17 @@ const availability = {
     tours: [{
       tourName: 'Tour Name 4',
       seatsLeft: 6,
-      timer: {
-        days: 152,
-        hours: 15,
-        minutes: 20,
-        seconds: 0
-      },
+      timer: new Date(2018, 11, 20),
       isAvailable: true
     }, {
       tourName: 'Tour Name 5',
       seatsLeft: 2,
-      timer: {
-        days: 122,
-        hours: 15,
-        minutes: 20,
-        seconds: 0
-      },
+      timer: new Date(2018, 11, 22),
       isAvailable: true
     }, {
       tourName: 'Tour Name 6',
       seatsLeft: 7,
-      timer: {
-        days: 92,
-        hours: 15,
-        minutes: 20,
-        seconds: 0
-      },
+      timer: new Date(2018, 11, 24),
       isAvailable: true
     }]
   },{
@@ -72,22 +42,12 @@ const availability = {
     tours: [{
       tourName: 'Tour Name 7',
       seatsLeft: 5,
-      timer: {
-        days: 0,
-        hours: 0,
-        minutes: 0,
-        seconds: 0
-      },
+      timer: new Date(2018, 11, 25),
       isAvailable: false
     }, {
       tourName: 'Tour Name 8',
       seatsLeft: 5,
-      timer: {
-        days: 212,
-        hours: 15,
-        minutes: 20,
-        seconds: 0
-      },
+      timer: new Date(2018, 11, 27),
       isAvailable: true
     }]
   }]

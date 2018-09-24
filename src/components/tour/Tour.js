@@ -10,14 +10,15 @@ class Tour extends React.Component {
   }
   componentDidMount() {
     const { groupIndex, tourIndex } = this.props;
-    const x = setInterval(() => {
-      let timer = countDown(this.state.timer);
-      if (timer.days === 0 && timer.hours === 0 && timer.minutes === 0 && timer.seconds === 0) {
-        this.props.onCountDownFinished(groupIndex, tourIndex);
-        clearInterval(x);
-      }
-      this.setState({timer: Object.assign({}, timer)});
-    }, 1000);
+    console.log(this.state.timer);
+    // const x = setInterval(() => {
+    //   let timer = countDown(new Date(this.state.timer));
+    //   if (timer.getTime() === new Date().getTime()) {
+    //     this.props.onCountDownFinished(groupIndex, tourIndex);
+    //     clearInterval(x);
+    //   }
+    //   this.setState({timer: Object.assign({}, timer)});
+    // }, 1000);
 
   }
   formatTime(time) {
@@ -27,7 +28,7 @@ class Tour extends React.Component {
         minutes: time.minutes < 10 ? `0${time.minutes}` : time.minutes,
         seconds: time.seconds  < 10 ? `0${time.seconds}` : time.seconds
     };
-    return timerFormated;
+    return new Date();
   }
   render() {
     const { tourName, seatsLeft, isAvailable } = this.props.tour;

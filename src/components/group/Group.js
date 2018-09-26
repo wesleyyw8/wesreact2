@@ -4,7 +4,6 @@ import Tour from '../tour/Tour';
 class Group extends React.Component {
   render() {
     const { tours, groupName, onBookingNowClick, groupIndex, onCountDownFinished } = this.props;
-    
     return (
       <div>
         <h2>{groupName}</h2>

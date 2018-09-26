@@ -12,12 +12,7 @@ describe('Tour component', () => {
         tourName: 'test',
         seatsLeft: 2,
         isAvailable: true,
-        timer: {
-          days: 3,
-          hours: 2,
-          minutes: 3,
-          seconds: 2
-        }
+        timer: new Date(2019, 2, 1, 10, 2)
       },
       onCountDownFinished: () => {},
       onBookingNowClick: () => {}
@@ -39,6 +34,6 @@ describe('Tour component', () => {
   });
   test('Card Header should have the date formated', () => {
     const wrapper = setup();
-    expect(wrapper.find('.card-header.text-center').text()).toEqual('3 days 2:03:02');
+    expect(wrapper.find('.card-header.text-center').text()).toEqual('1 year 1 days and 10:02:00');
   });
 });

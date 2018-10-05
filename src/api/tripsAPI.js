@@ -6,7 +6,7 @@ const availability = {
     tours: [{
       tourName: 'Tour Name 1',
       seatsLeft: 5,
-      timer: new Date(2019, 2, 23),
+      timer: new Date(2017, 8, 23),
       isAvailable: true
     }, {
       tourName: 'Tour Name 2',

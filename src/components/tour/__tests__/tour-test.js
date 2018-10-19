@@ -12,7 +12,7 @@ describe('Tour component', () => {
         tourName: 'test',
         seatsLeft: 2,
         isAvailable: true,
-        timer: new Date(2019, 2, 1, 10, 2)
+        timer: new Date(2020, 2, 1)
       },
       onCountDownFinished: () => {},
       onBookingNowClick: () => {}

@@ -3,25 +3,31 @@ import delay from './delay';
 const availability = {
   groups: [{
     groupName: 'Group1',
-    tours: [{
+    tours: [
+    {
       tourName: 'Tour Name 1',
       seatsLeft: 5,
       timer: new Date(2017, 8, 23),
       isAvailable: true
-    }, {
+    },
+    {
       tourName: 'Tour Name 2',
       seatsLeft: 4,
       timer: new Date(2019, 10, 12),
       isAvailable: true
-    }, {
+    }, 
+    {
       tourName: 'Tour Name 3',
       seatsLeft: 11,
-      timer: new Date(2018, 10, 12),
+      timer: new Date(2018, 9, 19),
       isAvailable: true
-    }]
-  },{
+    }
+    ]
+  },
+  {
     groupName: 'Group2',
-    tours: [{
+    tours: [
+    {
       tourName: 'Tour Name 4',
       seatsLeft: 6,
       timer: new Date(2018, 11, 20),
@@ -36,7 +42,8 @@ const availability = {
       seatsLeft: 7,
       timer: new Date(2018, 11, 24),
       isAvailable: true
-    }]
+    }
+    ]
   },{
     groupName: 'Group3',
     tours: [{
@@ -50,7 +57,8 @@ const availability = {
       timer: new Date(2018, 11, 27),
       isAvailable: true
     }]
-  }]
+  }
+  ]
 };
 
 class TripsAPI {

@@ -32,8 +32,9 @@ describe('Tour component', () => {
     expect(wrapper.find('.card-text').length).toEqual(1);
     expect(wrapper.find('.card-text').text()).toEqual('Seats left: 2');
   });
-  test('Card Header should have the date formated', () => {
+  test('Card Header should have the date formated', (done) => {
     const wrapper = setup();
+    expect(wrapper).toMatchSnapshot();
     expect(wrapper.find('.card-header.text-center').text()).toEqual('1 year 1 days and 10:02:00');
   });
 });

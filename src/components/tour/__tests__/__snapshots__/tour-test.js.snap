@@ -1,0 +1,271 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tour component Card Header should have the date formated 1`] = `
+ShallowWrapper {
+  "length": 1,
+  "node": <div
+    className="tour col-sm-3"
+  >
+    <div
+      className="card"
+    >
+      <div
+        className="card-header text-center"
+      >
+        
+        00
+        :
+        00
+        :
+        00
+      </div>
+      <img
+        alt="Card image cap"
+        className="card-img-top"
+        src="https://cdn.tourradar.com/s3/tour/645x430/24087_1ac9705f.jpg"
+      />
+      <div
+        className="card-body"
+      >
+        <h4
+          className="card-title"
+        >
+          test
+        </h4>
+        <p
+          className="card-text"
+        >
+          Seats left: 
+          2
+        </p>
+        <button
+          className="btn btn-primary"
+          disabled={false}
+          onClick={[Function]}
+        >
+          Book now!
+        </button>
+      </div>
+    </div>
+  </div>,
+  "nodes": Array [
+    <div
+      className="tour col-sm-3"
+    >
+      <div
+        className="card"
+      >
+        <div
+          className="card-header text-center"
+        >
+          
+          00
+          :
+          00
+          :
+          00
+        </div>
+        <img
+          alt="Card image cap"
+          className="card-img-top"
+          src="https://cdn.tourradar.com/s3/tour/645x430/24087_1ac9705f.jpg"
+        />
+        <div
+          className="card-body"
+        >
+          <h4
+            className="card-title"
+          >
+            test
+          </h4>
+          <p
+            className="card-text"
+          >
+            Seats left: 
+            2
+          </p>
+          <button
+            className="btn btn-primary"
+            disabled={false}
+            onClick={[Function]}
+          >
+            Book now!
+          </button>
+        </div>
+      </div>
+    </div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_context": Object {},
+      "_currentElement": <Tour
+        groupIndex={0}
+        onBookingNowClick={[Function]}
+        onCountDownFinished={[Function]}
+        tour={
+          Object {
+            "isAvailable": true,
+            "seatsLeft": 2,
+            "timer": 2020-03-01T00:00:00.000Z,
+            "tourName": "test",
+          }
+        }
+        tourIndex={0}
+      />,
+      "_instance": Tour {
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "props": Object {
+          "groupIndex": 0,
+          "onBookingNowClick": [Function],
+          "onCountDownFinished": [Function],
+          "tour": Object {
+            "isAvailable": true,
+            "seatsLeft": 2,
+            "timer": 2020-03-01T00:00:00.000Z,
+            "tourName": "test",
+          },
+          "tourIndex": 0,
+        },
+        "refs": Object {},
+        "state": Object {
+          "distance": 0,
+          "timer": 2020-03-01T00:00:00.000Z,
+        },
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 3,
+      "_nativeContainerInfo": null,
+      "_nativeParent": null,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": Object {
+        "_currentElement": <div
+          className="tour col-sm-3"
+        >
+          <div
+            className="card"
+          >
+            <div
+              className="card-header text-center"
+            >
+              
+              00
+              :
+              00
+              :
+              00
+            </div>
+            <img
+              alt="Card image cap"
+              className="card-img-top"
+              src="https://cdn.tourradar.com/s3/tour/645x430/24087_1ac9705f.jpg"
+            />
+            <div
+              className="card-body"
+            >
+              <h4
+                className="card-title"
+              >
+                test
+              </h4>
+              <p
+                className="card-text"
+              >
+                Seats left: 
+                2
+              </p>
+              <button
+                className="btn btn-primary"
+                disabled={false}
+                onClick={[Function]}
+              >
+                Book now!
+              </button>
+            </div>
+          </div>
+        </div>,
+        "_renderedOutput": <div
+          className="tour col-sm-3"
+        >
+          <div
+            className="card"
+          >
+            <div
+              className="card-header text-center"
+            >
+              
+              00
+              :
+              00
+              :
+              00
+            </div>
+            <img
+              alt="Card image cap"
+              className="card-img-top"
+              src="https://cdn.tourradar.com/s3/tour/645x430/24087_1ac9705f.jpg"
+            />
+            <div
+              className="card-body"
+            >
+              <h4
+                className="card-title"
+              >
+                test
+              </h4>
+              <p
+                className="card-text"
+              >
+                Seats left: 
+                2
+              </p>
+              <button
+                className="btn btn-primary"
+                disabled={false}
+                onClick={[Function]}
+              >
+                Book now!
+              </button>
+            </div>
+          </div>
+        </div>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": null,
+      "_topLevelWrapper": null,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <Tour
+    groupIndex={0}
+    onBookingNowClick={[Function]}
+    onCountDownFinished={[Function]}
+    tour={
+      Object {
+        "isAvailable": true,
+        "seatsLeft": 2,
+        "timer": 2020-03-01T00:00:00.000Z,
+        "tourName": "test",
+      }
+    }
+    tourIndex={0}
+  />,
+}
+`;

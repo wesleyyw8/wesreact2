@@ -10,6 +10,7 @@ class Tour extends React.Component {
     };
   }
   componentDidMount() {
+    
     const { groupIndex, tourIndex } = this.props;
     const timer = this.state.timer.getTime();
     const x = setInterval(() => {
